@@ -4,6 +4,8 @@ import { Container } from "./styled";
 import { useParams } from "react-router-dom";
 import { api } from "../../services/api";
 import { types } from "../../utils/pokemon-types";
+import Background from "../../assets/background-pokeball.png"
+
 
 export default function Details() {
   let { id } = useParams();
@@ -34,6 +36,7 @@ export default function Details() {
                 backgroundColor: types[pokemon.types[0].type.name].color,
               }}
             >
+              <img src={Background} alt="background" className="background-image"/>
               <div className="sprites-container">
                 <img
                   src={pokemon.sprites.front_default}

@@ -25,9 +25,14 @@ export const Container = styled.div`
     border-radius: 37.8px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-image: url("../../assets/background-pokeball.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    .background-image {
+      position: absolute;
+      height: 105%;
+      width: 50%;
+      left: 847px;
+      top: 166px;
+    }
 
     .sprite-details {
       width: 248px;
@@ -45,13 +50,17 @@ export const Container = styled.div`
       height: 613px;
       border-radius: 12px;
 
+      h3 {
+        padding-bottom: 20px;
+      }
+
       .stats-bar {
         border-radius: 12px;
         width: 200px;
-        background-color: #696969 ;
+        background-color: #696969;
         height: 18px;
 
-        div{
+        div {
           background: linear-gradient(to right, #ff0000, #ff9999);
           color: red;
           height: 100%;
@@ -95,7 +104,7 @@ export const Container = styled.div`
 
     .moves-container {
       background-color: white;
-      height: 450px;
+      height: 465px;
       width: 292px;
       border-radius: 8px;
       padding-left: 15px;

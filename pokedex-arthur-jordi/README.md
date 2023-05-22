@@ -26,4 +26,4 @@ O Projeto React e APIs é um site de pokémons que possui três páginas: Home, 
 
 ## Demonstração
 
-[Link demonstração](https://pt-br.react.dev/blog/2023/03/16/introducing-react-dev)
+[Link demonstração](https://pokedex-arthur-jordi.surge.sh)
